@@ -7,6 +7,10 @@ body {
     grid-column-end:   sidebar-end;
 }
 
+ul {
+    padding-inline-start: 0;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
     display: block;
 }
@@ -17,7 +21,7 @@ div, ul, li {
 }
 
 footer {
-    display: inline-block;
+    display: block;
     position: relative;
     width: 100%;
     padding-bottom: 10px;
@@ -150,11 +154,8 @@ header ul, header li {
 
 }
 
-.content {
-    background: url(img\banner_15882129845eaa34f8a8688.jpg);
-    background-size: cover;
-    position: relative;
-    
+.content a img {
+    width: 100%;
 }
 
 #homepage .section {
@@ -184,7 +185,7 @@ header ul, header li {
 }
 
 .icon_Service {
-    background: transparent url(img\icon_support.svg) center top no-repeat;
+    background: transparent url(img\iconservice.svg) center top no-repeat;
 }
 
 .icon-style {
@@ -238,10 +239,6 @@ header ul, header li {
     color: #fff;
 }
 
-.footertop li {
-    max-width: 25%;
-}
-
 .footertop li ul li a {
     display: inline-block;
     font-size: 15px;
@@ -267,6 +264,7 @@ header ul, header li {
 .f-social {
     display: grid;
     grid-auto-flow: column;
+    vertical-align: bottom;
 }
 
 .f-social a {
