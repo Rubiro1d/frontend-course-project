@@ -4,63 +4,106 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css\styles.css">
-        <script src="https://kit.fontawesome.com/6de9c5b880.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/6de9c5b880.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <title>Computer Shop</title>
     </head>
 
     <body>
-        <header class="globalmain">
-            <nav class="shop_nav">
-                <a class = "logo" href="">LOGO</a>
-                <div class="menu-toggle">
-                    <span class="bars"></span>
-                </div>
-
-                <ul class="nav_main">
-                    <li>
-                        <a class ="nav_button" href="">PRODUCTS</a>
-                    </li>
-                    <li>
-                        <a class ="nav_button" href="">COMMUNITY</a>
-                    </li>
-                    <li>
-                        <a class ="nav_button" href="">SUPPORT</a>
-                    </li>
-                </ul>
-                
-                <ul class="nav_right">
-                    <li>
-                        <a href="">
-                            <i class="fas fa-user-circle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fas fa-search"></i>
-                        </a>
-                    </li>
-                </ul>
-
-                <div id="nav_search">
-
+        <header class="">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo" href="#">
+                        <img src="css\img\Logo.png">
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    PRODUCTS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Desktops</a></li>
+                                    <li><a class="dropdown-item" href="#">Monitors</a></li>
+                                    <li><a class="dropdown-item" href="#">Graphic Cards</a></li>
+                                    <li><a class="dropdown-item" href="#">Motherboards</a></li>
+                                    <li><a class="dropdown-item" href="#">Peripherals</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SUPPORT</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-search" type="submit">Search</button>
+                         </form>
+                         <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="">
+                                    <i class="bi bi-person-circle icon"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">
+                                    <i class="bi bi-cart3"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">
+                                    <i class="bi bi-search"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
-        <article id="homepage">
-            <section id="top_banner" class="section">
-                <div class="content">
-                   <a href="">
-                        <img src="css\img\banner_15882129845eaa34f8a8688.jpg" alt="Join The Winning Streak">
-                    </a>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
-            </section>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="">
+                        <img src="css\img\banner_1614304455217b9c898b1263b89ef4096c94e5802a.jpeg" alt="MSI Creator Awards" class="d-block w-100">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="">
+                        <img src="css\img\banner_16057818245fb6494090acb9.24691211.jpeg" alt="RTX. It's On." class="d-block w-100">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="">
+                        <img src="css\img\banner_16105255245ffeab5402cd19.30768276.jpeg" alt="MSI Reward Program Members" class="d-block w-100">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="">
+                        <img src="css\img\banner_16148353734038f667b29e76acd4af4580cc68c8ed.jpeg" alt="MSI Reward Program Members" class="d-block w-100">
+                    </a>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
                 
-            <section id="Products" class="section">
+            <div id="Products" class="section">
                 <div class="content">
                     <div class="basic bs-row">
                         <div class="bs-col">
@@ -94,9 +137,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </article>
-
+            </div>
+        
         <aside id="sidebar">
             <div class="bs-col" id="offer">
                 <p>Specal offer</p>
