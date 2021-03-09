@@ -8,12 +8,12 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/6de9c5b880.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <title>Computer Shop</title>
+        <title>Pepe Shop</title>
     </head>
 
     <body>
-        <header class="">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <header class="pepeHeader">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand logo" href="#">
                         <img src="css\img\Logo.png">
@@ -46,7 +46,7 @@
                          <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a href="">
-                                    <i class="bi bi-person-circle icon"></i>
+                                    <i class="bi bi-person-circle"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -64,6 +64,8 @@
                 </div>
             </nav>
         </header>
+
+        <main class="pepeMain">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -102,111 +104,99 @@
                   <span class="visually-hidden">Next</span>
                 </button>
             </div>
-                
-            <div id="Products" class="section">
-                <div class="content">
-                    <div class="basic bs-row">
-                        <div class="bs-col">
-                            <a href="">
-                                <div class="headline">
-                                    <div class="headline-img">
-                                        <span class="icon-style icon_Service">::before</span>
-                                    </div>
-                                    <div class="font-card">
-                                        <span class="fc-title">Service</span>
-                                        <span class="fc-intro">We can computer of your dreams</span>
-                                    </div>
-                                </div>
-                                <div class="BG_img BG_img_1"></div>
-                            </a>
-                        </div>
-
-                        <div class="bs-col">
-                            <a href="">
-                                <div class="headline">
-                                    <div class="headline-icon">
-                                        <span class="icon-style icon_Games"></span>
-                                    </div>
-                                    <div class="font-card">
-                                        <span class="fc-title">Games</span>
-                                        <span class="fc-intro">We also sell computer games</span>
-                                    </div>
-                                </div>
-                                <div class="BG_img BG_img_2"></div>
-                            </a>
-                        </div>
+            
+            <section class="service">
+                <a class="service-link" href="">
+                    <div class="service-head">
+                        <i class="bis bi-tools"></i>
+                        <h5 class="service-title">Service</h5>
+                        <p class="service-description">We can build the computer of your dreams</p>
                     </div>
+                    <img src="css\img\bgimg01.jpg" class="service-img" alt="bg-img1">
+                </a>
+            
+                <a class="service-link" href="">
+                    <div class="service-head">
+                        <i class="bis bi-controller"></i>
+                        <h5 class="service-title">Games</h5>
+                        <p class="service-description">We also sell computer games</p>
+                    </div>
+                    <img src="css\img\bgimg02.jpg" class="service-img" alt="bg-img2">
+                </a>
+            </section>
+        
+            <aside class="pepeSidebar">
+                <div class="bs-col" id="offer">
+                    <p>Special offer</p>
+                    <img src="https://media.kingston.com/hyperx/product/hx-headset-cloud-stinger-pc-comp-chart-150X128.png" class="Sidebar-img">
+                    <p>HyperX Cloud Stinger</p>
+                    <p><S>100</S>80$</p>
+                    <button>
+                        <a href="">More</a>
+                    </button>
                 </div>
-            </div>
+            </aside>
+        </main>
+
+        <footer class="pepeFooter">
+            <div class="pepeFooter-container">
+                <nav class="shortcut">
+                    <ul class="shortcut-menu">
+                        <li class="shortcut-item">
+                            <h2 class="shortcut-field">NEED HELP?</h2>
+                            <ul class="shortcut-submenu">
+                                <li class="shortcut-subitem">
+                                    <a class="shortcut-link" href="">Support</a>
+                                </li>
+                                <li>
+                                    <a class="shortcut-link" href="">Warranty</a>
+                                </li>
+                                <li>
+                                    <a class="shortcut-link" href="">Delivery</a>
+                                </li>
+                                <li>
+                                    <a class="shortcut-link" href="">Contact Us</a>
+                                </li>
+                            </ul>
+                        </li>
         
-        <aside id="sidebar">
-            <div class="bs-col" id="offer">
-                <p>Specal offer</p>
-                <img src="https://media.kingston.com/hyperx/product/hx-headset-cloud-stinger-pc-comp-chart-150X128.png">
-                <p>HyperX Cloud Stinger</p>
-                <p>100 80$</p>
-                <button>
-                    <a href="">More</a>
-                </button>
-            </div>
-        </aside>
+                        <li class="shortcut-item">
+                            <h2 class="shortcut-field">COMPANY</h2>
+                            <ul class="shortcut-submenu">
+                                <li class="shortcut-subitem">
+                                    <a class="shortcut-link" href="">About Us</a>
+                                </li>
+                            </ul>
+                        </li>
         
-        <footer>
-            <ul class="footertop">
-                <li class="f-help">
-                    <h2>NEED HELP?</h2>
-                    <ul>
-                        <li>
-                            <a href="">Support</a>
+                        <li class="shortcut-item">
+                            <h2 class="shortcut-field">COMMUNITY</h2>
+                            <ul class="shortcut-submenu">
+                                <li class="shortcut-subitem">
+                                    <a class="shortcut-link" href="">Forums</a>
+                                </li>
+                                <li>
+                                    <a class="shortcut-link" href="">Blogs</a>
+                                </li>
+                                <li>
+                                    <a class="shortcut-link" href="">Social Media</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="">Warranty</a>
-                        </li>
-                        <li>
-                            <a href="">Delivery</a>
-                        </li>
-                        <li>
-                            <a href="">Contact Us</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="f-company">
-                    <h2>COMPANY</h2>
-                    <ul>
-                        <li>
-                            <a href="">About Us</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="f-community">
-                    <h2>COMMUNITY</h2>
-                    <ul>
-                        <li>
-                            <a href="">Forums</a>
-                        </li>
-                        <li>
-                            <a href="">Blogs</a>
-                        </li>
-                        <li>
-                            <a href="">Social Media</a>
+        
+                        <li class="shortcut-item">
+                            <h2 class="shortcut-field">NEWS</h2>
+                            <ul class="shortcut-submenu">
+                                <li class="shortcut-subitem">
+                                    <a class="shortcut-link" href="">News</a>
+                                </li >
+                                <li class="shortcut-subitem">
+                                    <a class="shortcut-link" href="">Awards</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-                </li>
-
-                <li class="f-news">
-                    <h2>NEWS</h2>
-                    <ul>
-                        <li>
-                            <a href="">News</a>
-                        </li>
-                        <li>
-                            <a href="">Awards</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                </nav>
 
             <div class="footerbottom">
                     <span>
@@ -235,6 +225,7 @@
                         </li>
                     </ul>
             </div>
+        </div>
         </footer>
     </body>
 </html>
