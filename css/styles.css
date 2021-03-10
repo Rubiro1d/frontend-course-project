@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    outline: 0;
+}
+
 img {
     vertical-align: baseline;
 }
@@ -12,7 +17,9 @@ img {
     font-size: 50px;
 }
 
-.btn-search{
+
+
+.btn{
     color:#fff;border-color:#fff
 }
 
@@ -55,11 +62,15 @@ img {
     margin-left: 20px;
 }
 
-.service {
+.pepeMain .service {
     display: grid;
     grid-template: minmax(50vh, auto)/repeat(2, 1fr);
     padding: 5px;
     gap: 5px;
+}
+
+.pepeMain .pepeSidebar {
+    float: right;
 }
 
 .pepeMain {
@@ -90,11 +101,11 @@ img {
     font-weight: normal;
 }
 
-.service-link {
+.pepeMain .service-link {
     position: relative;
 }
 
-.service-head{
+.pepeMain .service-head{
     position: absolute;
     text-align: center;
     display: flex;
@@ -115,10 +126,6 @@ ol, ul, li {
     margin: 0;
 }
 
-ol, ul {
-    padding-left: 0;
-}
-
 .pepeFooter {
     background-image: linear-gradient(to top, #0c0c0c 0, #232323 100%);
     color: #666;
@@ -128,6 +135,47 @@ ol, ul {
     margin: auto;
     padding: 0 30px;
     max-width: 1600px;
+}
+
+.pepeFooter .info {
+    padding: 15px 0 30px 0;
+    justify-content: space-between;
+    border-top: 1px solid #262626;
+}
+
+.pepeFooter .info .copyright{
+    text-align: center;
+    font-size: 25px;
+}
+
+.pepeFooter .info .service {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.pepeFooter .info .service-item {
+    margin-left: 15px;
+}
+
+.pepeFooter .info .service-link {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.pepeFooter .info .social {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.pepeFooter .info .social-item {
+    margin-left: 15px;
+}
+
+.pepeFooter .info .social-link {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
 }
 
 .pepeFooter .shortcut {
@@ -143,6 +191,7 @@ ol, ul {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    
 }
 
 .pepeFooter .shortcut-field {
@@ -154,9 +203,13 @@ ol, ul {
 .pepeFooter .shortcut-link {
     color: #666;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .pepeFooter .shortcut-subitem {
     padding: 10px 0;
 }
 
+.pepeFooter .shortcut-submenu{
+    padding-left: 0;
+}
