@@ -1,4 +1,6 @@
-const User = require("./user.js");
+const greeting = require("./greeting");
  
-let vova = new User("Volodymyr", 21);
-vova.sayHi();
+global.name = "Eugene";
+ 
+global.console.log(date);
+console.log(greeting.getMessage());
