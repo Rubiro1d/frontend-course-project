@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css\styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <title>Pepe Shop</title>
+    </head>
+
+    <body>
+        <header class="pepeHeader">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo" href="#">
+                        <img src="css\img\Logo1.png">
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><!--<i class="bi bi-list"></i>--></span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    PRODUCTS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Desktops</a></li>
+                                    <li><a class="dropdown-item" href="#">Monitors</a></li>
+                                    <li><a class="dropdown-item" href="#">Graphic Cards</a></li>
+                                    <li><a class="dropdown-item" href="#">Motherboards</a></li>
+                                    <li><a class="dropdown-item" href="#">Peripherals</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SUPPORT</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-search" type="submit">Search</button>
+                         </form>
+                         <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="sign-link" href="">
+                                    <i class="bi bi-person-circle"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sign-link" href="">
+                                    <i class="bi bi-cart3"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sign-link" href="">
+                                    <i class="bi bi-search"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="pepeMain">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="">
+                        <img src="css\img\banner_1614304455217b9c898b1263b89ef4096c94e5802a.jpeg" alt="MSI Creator Awards" class="d-block w-100">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="">
+                        <img src="css\img\banner_16057818245fb6494090acb9.24691211.jpeg" alt="RTX. It's On." class="d-block w-100">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="">
+                        <img src="css\img\banner_16105255245ffeab5402cd19.30768276.jpeg" alt="MSI Reward Program Members" class="d-block w-100">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="">
+                        <img src="css\img\banner_16148353734038f667b29e76acd4af4580cc68c8ed.jpeg" alt="MSI Reward Program Members" class="d-block w-100">
+                    </a>
+                  </div>
+                </div>
+                <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>-->
+            </div>
+            
+            <section class="service">
+                <a class="service-link" href="">
+                    <div class="service-head">
+                        <i class="bi bi-tools"></i>
+                        <h5 class="service-title">Service</h5>
+                        <p class="service-description">We can build the computer of your dreams</p>
+                    </div>
+                    <img src="css\img\bgimg01.jpg" class="service-img" alt="bg-img1">
+                </a>
+            
+                <a class="service-link" href="">
+                    <div class="service-head">
+                        <i class="bi bi-controller"></i>
+                        <h5 class="service-title">Games</h5>
+                        <p class="service-description">We also sell computer games</p>
+                    </div>
+                    <img src="css\img\bgimg02.jpg" class="service-img" alt="bg-img2">
+                </a>
+            </section>
+        
+            <section class="sale">
+                <div class="sale-card">
+                    <img src="https://media.kingston.com/hyperx/product/hx-headset-cloud-stinger-pc-comp-chart-150X128.png" class="sale-img" alt="sale-img1">
+                    <div class="sale-body">
+                        <h5 class="sale-title">HyperX Cloud Stinger</h5>
+                        <div class="sale-rating">
+                            <span class="rate-star">
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star-half"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star"></i>
+                            </span>
+                        </div>
+                        <div class="sale-info">
+                            <div class="sale-price">
+                                <span class="newPrice">80 $</span>
+                                <span class="oldPrice">100 $</span>
+                            </div>
+                            <a class="bttn btn-more" href="">More</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="sale-card">
+                    <img src="https://media.kingston.com/hyperx/product/hx-headset-cloud-stinger-pc-comp-chart-150X128.png" class="sale-img" alt="sale-img1">
+                    <div class="sale-body">
+                        <h5 class="sale-title">HyperX Cloud Stinger</h5>
+                        <div class="sale-rating">
+                            <span class="rate-star">
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star-half"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star"></i>
+                            </span>
+                        </div>
+                        <div class="sale-info">
+                            <div class="sale-price">
+                                <span class="newPrice">80 $</span>
+                                <span class="oldPrice">100 $</span>
+                            </div>
+                            <a class="bttn btn-more" href="">More</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="sale-card">
+                    <img src="https://media.kingston.com/hyperx/product/hx-headset-cloud-stinger-pc-comp-chart-150X128.png" class="sale-img" alt="sale-img1">
+                    <div class="sale-body">
+                        <h5 class="sale-title">HyperX Cloud Stinger</h5>
+                        <div class="sale-rating">
+                            <span class="rate-star">
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star-half"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star"></i>
+                            </span>
+                        </div>
+                        <div class="sale-info">
+                            <div class="sale-price">
+                                <span class="newPrice">80 $</span>
+                                <span class="oldPrice">100 $</span>
+                            </div>
+                            <a class="bttn btn-more" href="">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sale-card">
+                    <img src="https://media.kingston.com/hyperx/product/hx-headset-cloud-stinger-pc-comp-chart-150X128.png" class="sale-img" alt="sale-img1">
+                    <div class="sale-body">
+                        <h5 class="sale-title">HyperX Cloud Stinger</h5>
+                        <div class="sale-rating">
+                            <span class="rate-star">
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star-half"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span class="rate-star">
+                                <i class="bi bi-star"></i>
+                            </span>
+                        </div>
+                        <div class="sale-info">
+                            <div class="sale-price">
+                                <span class="newPrice">80 $</span>
+                                <span class="oldPrice">100 $</span>
+                            </div>
+                            <a class="bttn btn-more" href="">More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="pepeFooter">
+            <div class="pepeFooter-container">
+                <nav class="shortcut">
+                    <ul class="shortcut-menu">
+                        <li class="shortcut-item">
+                            <h2 class="shortcut-field">NEED HELP?</h2>
+                            <ul class="shortcut-submenu">
+                                <li class="shortcut-subitem">
+                                    <a class="shortcut-link" href="">Support</a>
+                                </li>
+                                <li class="shortcut-subitem">
+                                    <a class="shortcut-link" href="">Warranty</a>
+                                </li>
+                                <li class="shortcut-subitem">
+                                    <a class="shortcut-link" href="">Delivery</a>
+                                </li>
+                                <li class="shortcut-subitem">
+                                    <a class="shortcut-link" href="">Contact Us</a>
+                                </li>
+                            </ul>
+                        </li>
+        
+                        <li class="shortcut-item">
+                            <h2 class="shortcut-field">COMPANY</h2>
+                            <ul class="shortcut-submenu">
+                                <li class="shortcut-subitem">
+                                    <a class="shortcut-link" href="">About Us</a>
+                                </li>
+                            </ul>
+                        </li>
+        
+                        <li class="shortcut-item">
+                            <h2 class="shortcut-field">COMMUNITY</h2>
+                            <ul class="shortcut-submenu">
+                                <li class="shortcut-subitem">
+                                    <a class="shortcut-link" href="">Forums</a>
+                                </li>
+                                <li class="shortcut-subitem">
+                                    <a class="shortcut-link" href="">Blogs</a>
+                                </li>
+                                <li class="shortcut-subitem">
+                                    <a class="shortcut-link" href="">Social Media</a>
+                                </li>
+                            </ul>
+                        </li>
+        
+                        <li class="shortcut-item">
+                            <h2 class="shortcut-field">NEWS</h2>
+                            <ul class="shortcut-submenu">
+                                <li class="shortcut-subitem">
+                                    <a class="shortcut-link" href="">News</a>
+                                </li>
+                                <li class="shortcut-subitem">
+                                    <a class="shortcut-link" href="">Awards</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="info">
+                    <div class="copyright">
+                        <span>
+                            Copyright © 2020 Copmuter Shop Inc. All rights reserved.
+                        </span>
+                    </div>
+                    
+                    <ul class="social">
+                        <li class="social-item">
+                            <a class="social-link" href="">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link" href="">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="service">
+                        <li class="service-item">
+                            <a class="service-link" href="">Privacy Policy</a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-link" href="">Terms of Use</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>
