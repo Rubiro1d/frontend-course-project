@@ -1,19 +1,39 @@
 const express = require("express");
-  
+const hbs = require("hbs");
+ 
 const app = express();
-// создаем парсер для данных в формате json
-const jsonParser = express.json();
-  
-app.post("/user", jsonParser, function (request, response) {
-    console.log(request.body);
-    if(!request.body) return response.sendStatus(400);
+ 
+hbs.registerHelper("getTime", function(){
      
-    response.json(request.body); // отправляем пришедший ответ обратно
+    var myDate = new Date();
+    var hour = myDate.getHours();
+    var minute = myDate.getMinutes();
+    var second = myDate.getSeconds();
+    if (minute < 10) {
+        minute = "0" + minute;
+    }
+    if (second < 10) {
+        second = "0" + second;
+    }
+    return "Текущее время: " + hour + ":" + minute + ":" + second;
 });
-  
+ 
+hbs.registerHelper("createStringList", function(array){
+     
+    var result="";
+    for(var i=0; i<array.length; i++){
+        result +="<li>" + array[i] + "</li>";
+    }
+    return new hbs.SafeString("<ul>" + result + "</ul>");
+});
+ 
+ 
+app.set("view engine", "hbs");
+ 
 app.get("/", function(request, response){
-      
-    response.sendFile(__dirname + "/index.html");
+     
+    response.render("home.hbs", { 
+        fruit: [ "apple", "lemon", "banana", "grape"]
+    });
 });
-  
 app.listen(3000);
