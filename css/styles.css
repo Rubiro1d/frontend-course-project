@@ -105,7 +105,7 @@ img {
 .pepeMain .sale-card {
     display: flex;
     flex-direction: column;
-    background-color: rgb(10, 0, 53);
+    background-color: rgb(255, 94, 0);
     background-clip: border-box;
     border: 1px solid rgb(0, 0, 0);
     border-radius: .25rem;
@@ -130,7 +130,6 @@ img {
 .pepeMain .rate-star {
     display: inline-block;
     position: relative;
-
 }
 
 .pepeMain .sale-info {
@@ -205,7 +204,7 @@ img {
     justify-content: center;
     align-items: center;
     background: rgba(0,0,0,0.3);
-    transition-property: background;
+    -webkit-transition-duration: 0,3s;
     transition-duration: 0,3s;
 }
 

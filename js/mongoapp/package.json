@@ -1,9 +1,0 @@
-{
-    "name": "mongoapp",
-    "version": "1.0.0",
-    "dependencies": {
-        "express": "^4.16.0",
-        "mongodb": "^3.6.5",
-        "mongoose": "^5.12.2"
-    }
-}
